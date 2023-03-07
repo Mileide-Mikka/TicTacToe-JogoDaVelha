@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+  }
+
+  /* Main Container */
+#main {
+    text-align: center;
+}
+
+h1 {
+  color: black;
+  font-size: 40px;
+  margin: 10px auto;
+}
+
+/* Game Instruction Text */
+#rules-game {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  font-size: 17px;
+  margin: 10px auto;
+}
+
+#gameBoard {position: relative;
+    margin: 1% auto;
+  background-color: #232323;
+  display: grid;
+  grid-template-columns: 6rem 6rem 6rem;
+  grid-template-rows: 6rem 6rem 6rem;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  max-width: 19rem;
+}
+
+#gameBoard span {
+  background-color: #ddd;
+  display: grid;
+  place-content: center;
+  font-size: 5rem;
+}
+
+#gameBoard span.win {
+  background-color: #25a340;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+#start {
+    position: relative;
+    margin: 0 47%;
+    padding: 10px;
+    border: #0bdb38;
+    border-radius: 5px;
+    background-color: #25a340;
+    color: white;
+}
+
+#start:hover {
+    padding: 11px;
+    border: #15dd41;
+    border-radius: 5px;
+    background-color: #1fec4c;
+    color: white;
+}
+
+label, #player1, #player2{
+    position: relative;
+    margin: 0 42%;
+}
+
+h2, #turnPlayer{
+    text-align: center;
+}

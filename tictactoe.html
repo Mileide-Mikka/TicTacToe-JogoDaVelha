@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./tictactoe.js" defer></script>
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <main id="main">
+    <h1>Tic Tac Toe (jogo da velha)</h1>
+    <!--Game Rules--><!--Regras do jogo-->
+    <div id="rules-game">
+        <strong><em>English:</em></strong><br>
+        Games starts by tap on de user-chosen box
+        <br>
+        First Player start as <strong>X</strong><br>
+        Second player as <strong>0</strong>
+
+
+
+        <strong><em>Portuguese:</em></strong><br>
+        O jogo começará quando o jogador tocar o campo escolhido
+        <br>
+        Primeiro jogador começa como <strong>X</strong><br>
+        Segundo jogador como <strong>0</strong>
+    </div>
+    </main>
+    
+    <br>
+    <section id="gameBoard">
+      <span class="cursor-pointer" data-region="0.0"></span>
+      <span class="cursor-pointer" data-region="0.1"></span>
+      <span class="cursor-pointer" data-region="0.2"></span>
+      <span class="cursor-pointer" data-region="1.0"></span>
+      <span class="cursor-pointer" data-region="1.1"></span>
+      <span class="cursor-pointer" data-region="1.2"></span>
+      <span class="cursor-pointer" data-region="2.0"></span>
+      <span class="cursor-pointer" data-region="2.1"></span>
+      <span class="cursor-pointer" data-region="2.2"></span>
+    </section>
+
+    <h2>Vez de: <span id="turnPlayer"></span></h2>
+
+    <label for="player1"><strong>X</strong></label>
+    <input type="text" id="player1" placeholder="Nome do Jogador 1">
+
+    <label for="player2"><strong>O</strong></label>
+    <input type="text" id="player2" placeholder="Nome do Jogador 2">
+    <br><br>
+    <button id="start">Começar!</button>
+</body>
+</html>
